@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 单据号 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <TextView
+                android:layout_width="82dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="单据号:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_order_no"
+                android:editable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!-- 选择门店编号 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <TextView
+                android:layout_width="82dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="门店编号:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_mendian"
+                android:layout_width="wrap_content"
+                android:layout_height="32dip"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <!-- 到货日期 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <TextView
+                android:layout_width="82dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="到货日期:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_daohuoriqi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#969696" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="#969696" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/yao_huo_section_tv_style"
+                    android:text="序号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="#969696" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/yao_huo_section_tv_style"
+                    android:text="单品号" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="#969696" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/yao_huo_section_tv_style"
+                    android:text="品名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="#969696" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/yao_huo_section_tv_style"
+                    android:text="数量" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="48dip"
+                android:layout_weight="2" >
+
+                <View
+                    android:id="@+id/right_line"
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#969696" />
+
+                <View
+                    android:id="@+id/left_line"
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="#969696" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    style="@style/yao_huo_section_tv_style"
+                    android:layout_toLeftOf="@id/right_line"
+                    android:layout_toRightOf="@id/left_line"
+                    android:text="单位" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/top"
+        android:background="#969696" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/top"
+            android:background="#969696" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清空" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top"
+        android:layout_marginTop="1dip"
+        android:cacheColorHint="#ffffff"
+        android:divider="#969696"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="line_color">#969696</color>
+	<color name="act_bg_color">#868686</color>
+	<color name="cell_bg">#CCCCCC</color>
+</resources>

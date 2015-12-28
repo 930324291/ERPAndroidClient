@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">东泊订货服务系统</string>
+	<string name="user_name">手机</string>
+	<string name="psw">密码</string>
+	<string name="yao_huo_ji_hua_act_title">要货信息页面</string>
+	<string name="pd_text">请稍候...</string>
+</resources>

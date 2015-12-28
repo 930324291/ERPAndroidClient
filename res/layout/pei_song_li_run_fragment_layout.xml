@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/sp_md_start"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/sp_md_end"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_start"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="开始日期"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_end"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="开始日期"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/yao_huo_section_tv_style"
+                android:text="序号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/yao_huo_section_tv_style"
+                android:text="门店名称" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/yao_huo_section_tv_style"
+                android:text="分量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/yao_huo_section_tv_style"
+                android:text="单价" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2" >
+
+            <View
+                android:id="@+id/right_line"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#969696" />
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/yao_huo_section_tv_style"
+                android:layout_toLeftOf="@id/right_line"
+                android:layout_toRightOf="@id/left_line"
+                android:text="金额" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:footerDividersEnabled="true" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wq.erpandroidclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.wq.erpandroidclient.ERPApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wq.erpandroidclient.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.YaoHuoActivity"
+            android:label="@string/yao_huo_ji_hua_act_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.YaoHuoJiHuaDetialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.GoodsChoseAct"
+            android:label="物料组选择"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.ChangePSWAct"
+            android:label="修改密码"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.KaoQinActivity"
+            android:label="考勤"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.BaoBiaoActivity"
+            android:label="报表"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.EmployeePickerAct"
+            android:label="员工选择"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.KaoQinDetialAct"
+            android:label="考勤明细"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wq.erpandroidclient.BaoBiaoDetialAct"
+            android:label="报表明细"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

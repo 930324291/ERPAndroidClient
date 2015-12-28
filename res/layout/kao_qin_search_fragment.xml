@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip" >
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="日期:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ems="10"
+                android:singleLine="true"
+                android:text="2014-12-11"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/yao_huo_section_tv_style"
+                android:text="序号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/yao_huo_section_tv_style"
+                android:text="员工名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/yao_huo_section_tv_style"
+                android:text="上班时间" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="48dip"
+            android:layout_weight="2" >
+
+            <View
+                android:id="@+id/right_line"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#969696" />
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#969696" />
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/yao_huo_section_tv_style"
+                android:layout_toLeftOf="@id/right_line"
+                android:layout_toRightOf="@id/left_line"
+                android:text="下班时间" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line_color" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="128dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="查询" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ll_bottom"
+            android:divider="@color/line_color"
+            android:dividerHeight="1dip"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
